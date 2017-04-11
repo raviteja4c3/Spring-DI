@@ -17,7 +17,11 @@ Using that object in the constructor itself calling methods of ClassB.
 
 So when ever a Class A bean is initialized, its constructor is called and the methods of Class B are executed which are defined in constructor class.
 
-Note:   You have to run the MainApp.java file and the output you get is like below.
-Ouput in console: 
+# Note:   
+You have to run the MainApp.java file and the output you get is like below.
+you can not change values if use Di with constructor like this. If you want to modify the values then go with another approach of using setter/getter methods of DI
+
+# Ouput in console: 
 Inside SpellCheker Constructor..
 Inside checkSpelling.
+
