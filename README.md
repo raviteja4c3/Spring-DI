@@ -42,9 +42,7 @@ Then in Beans.xml you just need to add below line of code
 If suppose on 'textEditor' Initilization you want to call other class methods like below then,
 
 public class TextEditor {
-   public TextEditor(SpellChecker spellChecker) {  //constructor with arguemtns of required class's objects
-	   SpellChecker spellchkr = spellChecker;  
-     //here the object of class 'SpellChecker' will be passed as arg by spring container and we are stroing that to a class type var 'spellchkr'
+   public TextEditor(SpellChecker spellChecker) {  //constructor with arguemtns of required class's objects	   
 	   spellChecker.checkSpelling();
    }	   
 }	   
@@ -54,5 +52,7 @@ As the object creation of 	'spellChecker' is needed to call its method in 'TextE
 	  	<constructor-arg index="0">
 	  		<bean id="spellCheker" class="com.tpoint.SpellChecker"/>
 	  	</constructor-arg>
-    </bean>
+        </bean>
+	
+	
 
