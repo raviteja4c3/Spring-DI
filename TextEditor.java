@@ -1,10 +1,10 @@
   package com.tpoint;
 
 public class TextEditor {
-	   private SpellChecker spellChecker;
+	   //private SpellChecker spellChekr;
 	   
 	   public TextEditor(SpellChecker spellChecker) {
-		   this.spellChecker = spellChecker;
+		   //this.spellChekr = spellChecker;
 		   spellChecker.checkSpelling();
 	   }
 	   
